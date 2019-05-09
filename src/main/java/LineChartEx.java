@@ -25,7 +25,6 @@ public class LineChartEx extends JFrame {
 
 
 	public LineChartEx(XYSeries xySeries,String chartTitle, String yAxis) {
-
 		initUI(xySeries, chartTitle, yAxis);
 	}
 
@@ -67,8 +66,7 @@ public class LineChartEx extends JFrame {
 				PlotOrientation.VERTICAL,
 				true,
 				true,
-				false
-														 );
+				false);
 
 		XYPlot plot = chart.getXYPlot();
 
@@ -86,14 +84,8 @@ public class LineChartEx extends JFrame {
 		plot.setDomainGridlinePaint(Color.BLACK);
 
 		chart.getLegend().setFrame(BlockBorder.NONE);
-
-		chart.setTitle(new TextTitle(chartTitle,
-									 new Font("Serif", java.awt.Font.BOLD, 18)
-					   )
-					  );
-
+		chart.setTitle(new TextTitle(chartTitle, new Font("Serif", java.awt.Font.BOLD, 18)));
 		return chart;
 
 	}
-
 }
